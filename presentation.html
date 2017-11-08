@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Presentation</title>
+	<style type="text/css">
+		h2,h1{
+			text-align: center;
+		}
+		h1{
+			font-size: 60px!important;
+		}
+		li{
+			margin-left: 0px;
+			font-size: 30px;
+			
+			/*list-style-position: inside;*/
+			list-style: none;
+		}
+
+		img{
+			
+			height: 220px;
+			width: 220px;
+		}
+		.cont{
+			display: none;
+		}
+		.finish{
+			display: none;
+		}
+	</style>
+	 <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	 <link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+<body>
+	
+	<div id="container">
+	
+	<h1>
+		Group 12's Library
+	</h1>
+	<br>
+	<div id="json_show"></div>
+		<li class="img_2d"><br><img src="2d.jpg">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;incityzhang.cn/library</li>
+		<li class="cont">
+		
+			<br>>&nbsp;<a href="">页面布局: HTML5 CSS Bootstrap</a>
+			
+		</li>
+		<br>
+		<li class="cont">
+			
+				>&nbsp;<a href="">页面操作: JavaScript JQuery</a>
+			
+		</li>
+		<br>
+		<li class="cont">
+			
+				>&nbsp;<a href="#"  id="json_info">数据传输: JSON</a>
+			
+		</li>
+			
+		<br>
+		<li class="cont">
+			
+				>&nbsp;<a href="">数据存储: localStorage</a>
+			
+		</li>
+		<br>
+		<li class="cont">
+			
+				>&nbsp;<a href="">后期优化</a>
+			
+		</li>
+		<li class="finish">
+			That's all thank U ! <span id="smile">(*^__^*)</span>
+		</li>
+		<br>
+
+		<p class="lead">
+				<a href="#" id="continue" class="btn btn-lg btn-secondary">Continue</a>
+		</p>
+	</div>	
+	
+	    <script type="text/javascript" src="bootstrap/js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="bootstrap/js/theme.js"></script>
+    <script type="text/javascript">
+    	var cnt = 0;
+	    
+    	$('#continue').click(function(){
+    		cnt++;
+    		if(cnt ==1){
+	    		$('.cont').slideUp();
+	    		$('.cont').show();
+	    		$('.img_2d').fadeOut(1000);
+
+
+
+	    		}
+	    		if(cnt ==2){
+	    			$('.cont').slideUp();
+	    			$('.finish').css('font-size','60px');
+	    			$('#smile').css('font-size','30px');
+	    			$('.finish').fadeIn();
+	    		}
+    	})
+    </script>
+</body>
+</html>

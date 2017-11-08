@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Presentation</title>
+	<style type="text/css">
+		h2,h1{
+			text-align: center;
+		}
+		h1{
+			font-size: 60px!important;
+		}
+		li{
+			margin-left: 0px;
+			font-size: 30px;
+			
+			/*list-style-position: inside;*/
+			list-style: none;
+		}
+
+		img{
+			
+			height: 220px;
+			width: 220px;
+		}
+		.cont{
+			display: none;
+		}
+		.finish{
+			display: none;
+		}
+	</style>
+	 <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	 <link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+<body>
+	
+	<div>
+	
+	<h1>
+		Group 12's Library
+	</h1>
+	<br>
+
+		<p class="lead">
+				<button id="continue" class="btn btn-lg btn-secondary">Continue</button>
+		</p>
+	</div>	
+
+	    <script type="text/javascript" src="bootstrap/js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="bootstrap/js/theme.js"></script>
+    <script type="text/javascript">
+    	$('#continue').click(function(){
+    		window.history.go(-1);
+    	});
+    </script>
+</body>
+</html>
